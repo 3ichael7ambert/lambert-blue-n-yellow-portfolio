@@ -1,0 +1,154 @@
+<template>
+	<config>
+		<XMLEditor name="">true</XMLEditor><!-- Designates if you want the XML Editor available to you -->
+		<startX name="Start X Position" value="stepper">300</startX> <!-- Starting X position based off stage 0,0 -->
+		<startY name="Start Y Position" value="stepper">200</startY> <!-- Starting X position based off stage 0,0 -->
+		
+		<bgVisible name="Background visible?" value="boolean">false</bgVisible>
+		<bgColor name="Background color" value="uint">0xFFFFFF</bgColor>
+			
+		<gridXMax name="Maximum pictures along x axis" value="stepper">4</gridXMax> <!-- Maximum number of pictures in a horizontal row-->
+		<gridYMax name="Maximum pictures along y axis" value="stepper">2</gridYMax> <!-- Maximum number of pictures in a vertical row-->
+		<gridSpacing name="Spacing between thumbnails" value="stepper">10</gridSpacing>
+		<gridAlign name="Grid Alignment" value="option" num="2" option1="horizontal" option2="vertical">horizontal</gridAlign><!-- vertical or horizontal - Do you want images to scroll left right or up down?-->
+		
+		<insideSWF name="" value="boolean">false</insideSWF> <!-- Is this being placed inside another swf? -->
+
+		<thumbBg name="Thumb background" value="boolean">true</thumbBg> <!-- true or false, do you want thumbnail to have background -->
+		<thumbBgColor name="Thumb background Color" value="uint">0x333333</thumbBgColor> <!-- Color of thumbnail background in hex --> 
+		<thumbBgSize name="Thumb background size" value="stepper">4</thumbBgSize> <!-- Number of pixels you want thumbnail background to extend from picture -->
+		<thumbBgAlpha name="Thumb background alpha" value="slider" min="0" max="1" step=".01">1</thumbBgAlpha> <!-- Alpha value of thumbnail background -->
+		
+		<thumbHeight name="Thumb height" value="stepper">100</thumbHeight> <!-- Height of thumbnail in pixels-->								
+		<thumbWidth name="Thumb Width" value="stepper">100</thumbWidth> <!-- Width of thumbnail in pixels -->
+		
+		<thumbStretch name="Thumb stretch style" value="option" num="3" option1="crop" option2="stretch" option3="full">crop</thumbStretch> <!-- crop, stretch or full, crop keeps image ratio and cuts picture to fit, stretch puts whole image in thumbnail disregarding image ratio, full puts whole image in thumbnail keeping image ratio -->
+		<thumbScale name="Should thumbnail scale?" value="boolean">true</thumbScale> <!-- Do you want thumbnail to scale when you mouseover?-->
+		<thumbScaleSize name="Thumb scale size" value="slider" min="1.01" max="2.5" step=".01">1.5</thumbScaleSize> <!-- Amount you want to scale thumbnail in ratio format, ie 1.5 = thumbnail size*1.5 -->
+		<thumbScaleEffect name="Thumb Scale Effect" value="option" num="3" option1="elastic" option2="simple" option3="bounce">bounce</thumbScaleEffect>
+		<thumbScaleEffectSpeed name="Thumb Scale Effect Speed" value="slider" min="5" max="25" step="1">15</thumbScaleEffectSpeed>
+		<thumbClickable name="Thumb clickable?" value="boolean">true</thumbClickable> <!-- Do you want thumbnail to be clickable and enlarge image -->
+		<thumbClickAction name="Thumb click action" value="option" num="2" option1="url" option2="size">size</thumbClickAction> <!-- URL or SIZE -->
+		
+		<thumbCover name="Thumb Cover?" value="boolean">false</thumbCover> <!-- Do you want thumbnail to have a cover when mouseover is not true -->
+		<thumbCoverColor name="Thumb Cover Color" value="uint">0xFFFFFF</thumbCoverColor> <!-- What color do you want thumbnail cover to be?-->
+		<thumbCoverAlpha name="Thumb Cover Alpha" value="slider" min="0" max="1" step=".01">.5</thumbCoverAlpha> <!-- What alpha level do you want thumbnail cover to be-->
+		<thumbCoverFadeSpeed name="Thumb Cover Fade Speed" value="stepper">15</thumbCoverFadeSpeed> <!-- How quickly(in frames) do you want thumbnail cover to fade when mousedover-->
+
+		<thumbReflection name="Should images cast reflection?" value="boolean">true</thumbReflection> <!-- Do you want thumbnail to have a cover when mouseover is not true -->
+		
+		<thumbGray name="Gray transition?" value="boolean">true</thumbGray><!-- Do you want images to start b/w and fade to color?-->
+		<thumbGraySpeed name="Gray transition speed" value="stepper">10</thumbGraySpeed><!-- How fast do you want transition to happen?-->
+		
+		<imageBgColor name="Full image background color" value="uint">0x000000</imageBgColor> <!-- What color do you want image background to be (image background after you click on image)-->
+		<imageBgSize name="Full image background size" value="stepper">5</imageBgSize> <!-- Number of pixels you want image background to extend from iamge -->
+		<imageBgAlpha name="Full image background alpha" value="slider" min="0" max="1" step=".01">1</imageBgAlpha> <!-- Alpha value of image background -->
+		
+		<imageFadeSpeed name="Fade speed of full image" value="stepper">10</imageFadeSpeed> <!-- Speed in frames at which image fades in -->
+		<imageMaxWidth name="Maximum width for full image" value="stepper">475</imageMaxWidth> <!-- Maximum width you want enlarged picture to be-->
+		<imageMaxHeight name="Maximum height for full image" value="stepper">375</imageMaxHeight> <!-- Maximum height you want enlarged picture to be -->
+
+		<paginate name="Should photos scroll?" value="boolean">true</paginate><!-- should images be seperated into pages true, false -->
+		<paginateScrollType name="How should the page scroll?" value="option" num="2" option1="button" option2="mouse">mouse</paginateScrollType><!-- button or mouse -->
+		
+		<mouseScrollFactor name="Page scroll sensitivity" value="stepper" min="0" max="5" step=".01">.2</mouseScrollFactor>
+		<mouseScrollMaxSpeed name="Page scroll max speed" value="stepper" min="0" max="40">15</mouseScrollMaxSpeed>
+		
+		<imageTitle name="Should full image show title?" value="boolean">true</imageTitle> <!-- Do you want to display image title at bottom of image? -->
+		<imageTitleAlign name="How do you want title aligned?" value="option" num="3" option1="left" option2="center" option3="right">center</imageTitleAlign> <!-- How do you want your text aligned? center, left, right -->
+		<imageTitleColor name="What color should title be?" value="uint">0xFFFFFF</imageTitleColor> <!-- Text color -->
+		<imageTitleHeight name="How much space should be allowed for title?" value="stepper">30</imageTitleHeight> <!-- Height of imagetitle area at bottom of picture -->
+		<imageTitleFont name="" value="string">Arial</imageTitleFont> <!-- Font of image title (requires embedding of font in fla) -->
+		<imageTitleSize name="How large should title be?" value="stepper">15</imageTitleSize> <!-- Image title text size -->
+		
+		<bgFade name="Should background fade on click?" value="boolean">true</bgFade> <!-- Do you want main background to fade when you click on image?-->
+		<bgFadeColor name="Color of BG?" value="uint">0xFFFFFF</bgFadeColor> <!-- What color do you want fade background to be? -->
+		<bgFadeAlpha name="Alpha level of BG?" value="slider" min="0" max="1" step=".01">.5</bgFadeAlpha> <!-- What do you want alpha level of fade background to be? -->
+		<images name="" value="string">
+			<image>
+				<imgTitle><![CDATA[Image 1 <a href='http://www.flashcomponents.net' target="_blank"><u>www.flashcomponents.net</u></a>]]></imgTitle>
+				<clickLinkURL></clickLinkURL>
+				<thumbURL>/images/digital/img1.jpg</thumbURL>
+				<imageURL>/images/digital/img1.jpg</imageURL>
+			</image>
+			<image>
+				<imgTitle><![CDATA[Image 2 <a href='http://www.flashcomponents.net' target="_blank"><u>www.flashcomponents.net</u></a>]]></imgTitle>
+				<clickLinkURL></clickLinkURL>
+				<thumbURL>/images/digital/img2.jpg</thumbURL>
+				<imageURL>/images/digital/img2.jpg</imageURL>
+			</image>
+			<image>
+				<imgTitle><![CDATA[Image 3 <a href='http://www.flashcomponents.net' target="_blank"><u>www.flashcomponents.net</u></a>]]></imgTitle>
+				<clickLinkURL></clickLinkURL>
+				<thumbURL>/images/digital/img3.jpg</thumbURL>
+				<imageURL>/images/digital/img3.jpg</imageURL>
+			</image>
+			<image>
+				<imgTitle><![CDATA[Image 4 <a href='http://www.flashcomponents.net' target="_blank"><u>www.flashcomponents.net</u></a>]]></imgTitle>
+				<clickLinkURL></clickLinkURL>
+				<thumbURL>/images/digital/img4.jpg</thumbURL>
+				<imageURL>/images/digital/img4.jpg</imageURL>
+			</image>
+			<image>
+				<imgTitle><![CDATA[Image 5 <a href='http://www.flashcomponents.net' target="_blank"><u>www.flashcomponents.net</u></a>]]></imgTitle>
+				<clickLinkURL></clickLinkURL>
+				<thumbURL>/images/digital/img5.jpg</thumbURL>
+				<imageURL>/images/digital/img5.jpg</imageURL>
+			</image>
+			<image>
+				<imgTitle><![CDATA[Image 6 <a href='http://www.flashcomponents.net' target="_blank"><u>www.flashcomponents.net</u></a>]]></imgTitle>
+				<clickLinkURL></clickLinkURL>
+				<thumbURL>/images/digital/img6.jpg</thumbURL>
+				<imageURL>/images/digital/img6.jpg</imageURL>
+			</image>
+			<image>
+				<imgTitle><![CDATA[Image 7 <a href='http://www.flashcomponents.net' target="_blank"><u>www.flashcomponents.net</u></a>]]></imgTitle>
+				<clickLinkURL></clickLinkURL>
+				<thumbURL>/images/digital/img7.jpg</thumbURL>
+				<imageURL>/images/digital/img7.jpg</imageURL>
+			</image>
+			<image>
+				<imgTitle><![CDATA[Image 8 <a href='http://www.flashcomponents.net' target="_blank"><u>www.flashcomponents.net</u></a>]]></imgTitle>
+				<clickLinkURL></clickLinkURL>
+				<thumbURL>/images/digital/img8.jpg</thumbURL>
+				<imageURL>/images/digital/img8.jpg</imageURL>
+			</image>
+			<image>
+				<imgTitle><![CDATA[Image 9 <a href='http://www.flashcomponents.net' target="_blank"><u>www.flashcomponents.net</u></a>]]></imgTitle>
+				<clickLinkURL></clickLinkURL>
+				<thumbURL>/images/digital/img9.jpg</thumbURL>
+				<imageURL>/images/digital/img9.jpg</imageURL>
+			</image>
+			<image>
+				<imgTitle><![CDATA[Image 10 <a href='http://www.flashcomponents.net' target="_blank"><u>www.flashcomponents.net</u></a>]]></imgTitle>
+				<clickLinkURL></clickLinkURL>
+				<thumbURL>/images/digital/img10.jpg</thumbURL>
+				<imageURL>/images/digital/img10.jpg</imageURL>
+			</image>
+			<image>
+				<imgTitle><![CDATA[Image 11 <a href='http://www.flashcomponents.net' target="_blank"><u>www.flashcomponents.net</u></a>]]></imgTitle>
+				<clickLinkURL></clickLinkURL>
+				<thumbURL>/images/digital/img11.jpg</thumbURL>
+				<imageURL>/images/digital/img11.jpg</imageURL>
+			</image>
+			<image>
+				<imgTitle><![CDATA[Image 12 <a href='http://www.flashcomponents.net' target="_blank"><u>www.flashcomponents.net</u></a>]]></imgTitle>
+				<clickLinkURL></clickLinkURL>
+				<thumbURL>/images/digital/img12.jpg</thumbURL>
+				<imageURL>/images/digital/img12.jpg</imageURL>
+			</image>
+			<image>
+				<imgTitle><![CDATA[Image 13 <a href='http://www.flashcomponents.net' target="_blank"><u>www.flashcomponents.net</u></a>]]></imgTitle>
+				<clickLinkURL></clickLinkURL>
+				<thumbURL>/images/digital/img13.jpg</thumbURL>
+				<imageURL>/images/digital/img13.jpg</imageURL>
+			</image>
+			<image>
+				<imgTitle><![CDATA[Image 14 <a href='http://www.flashcomponents.net' target="_blank"><u>www.flashcomponents.net</u></a>]]></imgTitle>
+				<clickLinkURL></clickLinkURL>
+				<thumbURL>/images/digital/img14.jpg</thumbURL>
+				<imageURL>/images/digital/img14.jpg</imageURL>
+			</image>
+		</images>
+	</config>
+</template>

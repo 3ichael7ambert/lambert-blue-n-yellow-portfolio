@@ -1,0 +1,74 @@
+<gallery>
+	<settings>
+		<imagesFolder>images/</imagesFolder>
+		<imageAngle>30</imageAngle>
+		<useScrollBar>true</useScrollBar>
+		<slideShow>false</slideShow>
+		<slideShowDelay>2</slideShowDelay>
+		<flipDuration>1</flipDuration>
+		<flipSound></flipSound>
+		<colorScheme>custom</colorScheme>
+		<startPosition>center</startPosition>
+		<reflectionAlpha>80</reflectionAlpha>
+
+
+		<preloader stripesAlpha="45" barColor="0x000000" barAlpha="14" bgColor="0x000000" bgAlpha="10" innerShadow="20" dropShadow="30" />
+		<scrollbar bgColor="0x000000" bgAlpha="20" handleColor="0xffffff" handleAlpha="40" arrowsColor="0xffffff" arrowsAlpha="40" innerShadow="10" dropShadow="0" />
+		<caption textColor="0xffffff" bgColor="0x000000" bgAlpha="80" frameColor="0xffffff" frameAlpha="40" shadowAlpha="30" />
+		<background bgColor="0xffffff" bgAlpha="100" bgImage="images/photoflow.jpg" />
+				
+	
+	</settings>
+	<items>
+		<item>
+			<source>1.jpg</source>
+			<description>Thom Yorke</description>
+			
+			<!-- You can add a link to the image using following tag -->
+
+			<link>http://www.flash-gallery.com</link>
+			<target>_blank</target>
+		</item>
+		<item>
+			<source>2.jpg</source>
+			<description>Louis Armstrong</description>
+
+		</item>
+		<item>
+			<source>3.jpg</source>
+			<description>Edith Piaf</description>
+
+		</item>
+		<item>
+			<source>4.jpg</source>
+			<description>Moby</description>
+
+		</item>
+		<item>
+			<source>5.jpg</source>
+			<description>Faithless</description>
+
+		</item>
+		<item>
+			<source>6.jpg</source>
+			<description>Tori Amos</description>
+
+		</item>
+		<item>
+			<source>7.jpg</source>
+			<description>Aerosmith</description>
+
+		</item>
+		<item>
+			<source>8.jpg</source>
+			<description>Ray Charles</description>
+
+		</item>
+		<item>
+			<source>9.jpg</source>
+			<description>Rolling Stones</description>
+
+		</item>
+
+	</items>
+</gallery>								 

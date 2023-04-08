@@ -1,0 +1,40 @@
+body,td,th {
+	font-family: Courier New, Courier, monospace;
+}
+.style1 {font-size: 36px}
+body {
+	background-image: url(images/BGLambertDesigns.jpg);
+}
+
+
+
+
+/* support */
+#outerOLD {
+    width:800; left:50%; margin-padding:50%; text-align:middle;
+    margin: auto auto; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px;  PADDING-TOP: 5px;
+    }
+    #nav
+    {
+    top:-150;
+    }
+    body,td,th {
+        font-family: Courier New, Courier, monospace;
+    }
+    
+    a.donation:link, .donation{display: block; width:250;height:50;background-image:url(/support/donation_off.png);}
+    a.donation:hover{display: block; width:250;height:50;background-image:url(/support/donation_on.png);}
+
+    /* <style>
+#outerOLD {
+width:800; left:50%; margin-padding:50%; text-align:middle;
+margin: auto auto; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px;  PADDING-TOP: 5px;
+}
+#nav
+{
+top:-150;
+}
+body,td,th {
+	font-family: Courier New, Courier, monospace;
+}
+</style> */
